@@ -13,10 +13,16 @@ import Cuckoo
 class EncerradorDeLeilaoTests: XCTestCase {
 
     var formatador: DateFormatter!
+    var encerradorDeLeilao: EncerradorDeLeilao!
+    var daoFalso: MockLeilaoDao!
+    var carteiroFalso: MockCarteiro!
     
     override func setUpWithError() throws {
         formatador = DateFormatter()
         formatador.dateFormat = "yyyy/MM/dd"
+        daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
+        carteiroFalso = MockCarteiro().withEnabledSuperclassSpy()
+        encerradorDeLeilao = EncerradorDeLeilao(daoFalso, carteiro: carteiroFalso)
     }
 
     override func tearDownWithError() throws {
@@ -32,13 +38,12 @@ class EncerradorDeLeilaoTests: XCTestCase {
         
         let leiloesAntigos = [tvLed, geladeira]
         
-        let daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
+        
         
         stub(daoFalso) { (daoFalso) in
             when(daoFalso.correntes()).thenReturn(leiloesAntigos)
         }
-        
-        let encerradorDeLeilao = EncerradorDeLeilao(daoFalso)
+
         encerradorDeLeilao.encerra()
         
         let leiloesEncerrados = daoFalso.encerrados()
@@ -56,16 +61,33 @@ class EncerradorDeLeilaoTests: XCTestCase {
         guard let dataAntiga = formatador.date(from: "2018/05/19") else {return}
         
         let tvLed = CriadorDeLeilao().para(descricao: "TV LED").naData(data: dataAntiga).constroi()
-        let daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
         
         stub(daoFalso) { (daoFalso) in
             when(daoFalso.correntes()).thenReturn([tvLed])
         }
         
-        let encerradorDeLeilao = EncerradorDeLeilao(daoFalso)
         encerradorDeLeilao.encerra()
         
         verify(daoFalso).atualiza(leilao: tvLed)
+    }
+    
+    func testDeveContinuarExecucaoMesmoQuandoDaoFalhar() {
+        guard let dataAntiga = formatador.date(from: "2019/05/19") else {return}
+        
+        let tvLed = CriadorDeLeilao().para(descricao: "TV Led").naData(data: dataAntiga).constroi()
+        let geladeira = CriadorDeLeilao().para(descricao: "Geladeora").naData(data: dataAntiga).constroi()
+        let error = NSError(domain: "Error", code: 0, userInfo: nil)
+        
+        stub(daoFalso) { (daoFalso) in
+            when(daoFalso.correntes()).thenReturn([tvLed, geladeira])
+            when(daoFalso.atualiza(leilao: tvLed)).thenThrow(error)
+        }
+        
+        encerradorDeLeilao.encerra()
+        
+        verify(daoFalso).atualiza(leilao: geladeira)
+        verify(carteiroFalso).envia(geladeira)
+       
     }
 }
 extension Leilao: Matchable {

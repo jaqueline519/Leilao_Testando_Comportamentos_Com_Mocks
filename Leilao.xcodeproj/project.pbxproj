@@ -30,6 +30,7 @@
 		AED4584FF50B22A6EA843F1B /* Pods_Leilao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81EC4192FC18459C2154C4D /* Pods_Leilao.framework */; };
 		EA33C07C2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33C07B2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift */; };
 		EA33C0AE2638A33E00EA47F7 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33C0AD2638A33E00EA47F7 /* GeneratedMocks.swift */; };
+		EAE20C67263998DF008B4773 /* Carteiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE20C66263998DF008B4773 /* Carteiro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		C7DC0AC1610E99EB10575FA4 /* Pods-LeilaoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeilaoUITests/Pods-LeilaoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA33C07B2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncerradorDeLeilaoTests.swift; sourceTree = "<group>"; };
 		EA33C0AD2638A33E00EA47F7 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		EAE20C66263998DF008B4773 /* Carteiro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carteiro.swift; sourceTree = "<group>"; };
 		F145FB2F65C8FA496BC97986 /* Pods_LeilaoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeilaoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38DF57ED8C7EFC799D1BD99 /* Pods_LeilaoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeilaoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F712E29B1BE9A2A8745A94E1 /* Pods-LeilaoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeilaoTests/Pods-LeilaoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				A23F5A0E209CA483000E6525 /* Avaliador.swift */,
 				A26FBA9320A32DE60090FC1F /* CriadorDeLeilao.swift */,
 				038136CA20B48B5F005FEDD7 /* EncerradorDeLeilao.swift */,
+				EAE20C66263998DF008B4773 /* Carteiro.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Dao/LeilaoDao.swift\" \\\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Dao/LeilaoDao.swift\" \\\n\"${INPUT_DIR}/Models/Carteiro.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -472,6 +475,7 @@
 				038136CB20B48B5F005FEDD7 /* EncerradorDeLeilao.swift in Sources */,
 				03FA4AF1209353270047D61B /* AppDelegate.swift in Sources */,
 				A26FBA9420A32DE60090FC1F /* CriadorDeLeilao.swift in Sources */,
+				EAE20C67263998DF008B4773 /* Carteiro.swift in Sources */,
 				03FA4B27209353CB0047D61B /* Usuario.swift in Sources */,
 				03FA4AF9209353270047D61B /* Leilao.xcdatamodeld in Sources */,
 				A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */,
