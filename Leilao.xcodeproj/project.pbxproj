@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0368E4EA0C70B086FD18F753 /* Pods_LeilaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB7E06ECCE04AE745DD16E /* Pods_LeilaoTests.framework */; };
 		038136C120B4889E005FEDD7 /* LeilaoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038136C020B4889D005FEDD7 /* LeilaoDao.swift */; };
 		038136C520B4896B005FEDD7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 038136C420B4896B005FEDD7 /* libsqlite3.tbd */; };
 		038136C720B48AD8005FEDD7 /* FormatadorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038136C620B48AD8005FEDD7 /* FormatadorData.swift */; };
@@ -22,15 +23,18 @@
 		03FA4B25209353AF0047D61B /* Lance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4B24209353AF0047D61B /* Lance.swift */; };
 		03FA4B27209353CB0047D61B /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4B26209353CB0047D61B /* Usuario.swift */; };
 		03FA4B29209354F50047D61B /* Leilao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4B28209354F50047D61B /* Leilao.swift */; };
-		3962CB2194A1E4C00DA717F4 /* Pods_LeilaoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F145FB2F65C8FA496BC97986 /* Pods_LeilaoUITests.framework */; };
-		87030A9AE0C6ED1866EAE846 /* Pods_LeilaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38DF57ED8C7EFC799D1BD99 /* Pods_LeilaoTests.framework */; };
+		6438F0018C037725BE07C4EF /* Pods_LeilaoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F661D44DAB27F61591D6AD /* Pods_LeilaoUITests.framework */; };
 		A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A0E209CA483000E6525 /* Avaliador.swift */; };
 		A23F5A11209CD8FA000E6525 /* AvaliadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */; };
 		A26FBA9420A32DE60090FC1F /* CriadorDeLeilao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26FBA9320A32DE60090FC1F /* CriadorDeLeilao.swift */; };
-		AED4584FF50B22A6EA843F1B /* Pods_Leilao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81EC4192FC18459C2154C4D /* Pods_Leilao.framework */; };
+		DF58C137751C6C970EBDC0AE /* Pods_Leilao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5C25145AB7482C6C8F26F9 /* Pods_Leilao.framework */; };
+		EA308B20263A64BF009F9221 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA308B1F263A64BF009F9221 /* GeneratedMocks.swift */; };
 		EA33C07C2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33C07B2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift */; };
-		EA33C0AE2638A33E00EA47F7 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33C0AD2638A33E00EA47F7 /* GeneratedMocks.swift */; };
+		EABEBF1B263A00900096E264 /* GeradorDePagamentoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABEBF1A263A00900096E264 /* GeradorDePagamentoTests.swift */; };
 		EAE20C67263998DF008B4773 /* Carteiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE20C66263998DF008B4773 /* Carteiro.swift */; };
+		EAE20C6F2639B7A1008B4773 /* Pagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE20C6E2639B7A1008B4773 /* Pagamento.swift */; };
+		EAE20C742639B853008B4773 /* RepositorioDePagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE20C732639B853008B4773 /* RepositorioDePagamento.swift */; };
+		EAE20C792639B8E4008B4773 /* GeradorDePagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE20C782639B8E4008B4773 /* GeradorDePagamento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		032438B2846DA6607A6F44D3 /* Pods-LeilaoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeilaoTests/Pods-LeilaoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		038136C020B4889D005FEDD7 /* LeilaoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeilaoDao.swift; sourceTree = "<group>"; };
 		038136C320B48901005FEDD7 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		038136C420B4896B005FEDD7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -74,20 +77,25 @@
 		03FA4B24209353AF0047D61B /* Lance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lance.swift; sourceTree = "<group>"; };
 		03FA4B26209353CB0047D61B /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		03FA4B28209354F50047D61B /* Leilao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leilao.swift; sourceTree = "<group>"; };
-		0CF7CCCF5DC3FEF7719DA049 /* Pods-LeilaoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeilaoUITests/Pods-LeilaoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7A02B7555041DD36E6C17E51 /* Pods-Leilao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leilao/Pods-Leilao.debug.xcconfig"; sourceTree = "<group>"; };
-		96B13E362E12E632B3A49E78 /* Pods-Leilao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leilao/Pods-Leilao.release.xcconfig"; sourceTree = "<group>"; };
+		2AAB7E06ECCE04AE745DD16E /* Pods_LeilaoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeilaoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B279B469383BE434E51B508 /* Pods-LeilaoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoTests.release.xcconfig"; path = "Target Support Files/Pods-LeilaoTests/Pods-LeilaoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AC4F37AA0A0DF583DFB1193 /* Pods-LeilaoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoUITests.release.xcconfig"; path = "Target Support Files/Pods-LeilaoUITests/Pods-LeilaoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D5C25145AB7482C6C8F26F9 /* Pods_Leilao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leilao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE74C69E13AFB7D10DA5F9F /* Pods-Leilao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.release.xcconfig"; path = "Target Support Files/Pods-Leilao/Pods-Leilao.release.xcconfig"; sourceTree = "<group>"; };
 		A23F5A0E209CA483000E6525 /* Avaliador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliador.swift; sourceTree = "<group>"; };
 		A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliadorTests.swift; sourceTree = "<group>"; };
 		A26FBA9320A32DE60090FC1F /* CriadorDeLeilao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriadorDeLeilao.swift; sourceTree = "<group>"; };
-		B81EC4192FC18459C2154C4D /* Pods_Leilao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leilao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7DC0AC1610E99EB10575FA4 /* Pods-LeilaoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeilaoUITests/Pods-LeilaoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6FE7BF65B3A6B823CE1A168 /* Pods-LeilaoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeilaoUITests/Pods-LeilaoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C144C4465E71DC8F6E420EB3 /* Pods-LeilaoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoTests.debug.xcconfig"; path = "Target Support Files/Pods-LeilaoTests/Pods-LeilaoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1F661D44DAB27F61591D6AD /* Pods_LeilaoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeilaoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0BEC0E04FA79784C7F751E /* Pods-Leilao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.debug.xcconfig"; path = "Target Support Files/Pods-Leilao/Pods-Leilao.debug.xcconfig"; sourceTree = "<group>"; };
+		EA308B1F263A64BF009F9221 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		EA33C07B2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncerradorDeLeilaoTests.swift; sourceTree = "<group>"; };
-		EA33C0AD2638A33E00EA47F7 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		EABEBF1A263A00900096E264 /* GeradorDePagamentoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeradorDePagamentoTests.swift; sourceTree = "<group>"; };
 		EAE20C66263998DF008B4773 /* Carteiro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carteiro.swift; sourceTree = "<group>"; };
-		F145FB2F65C8FA496BC97986 /* Pods_LeilaoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeilaoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F38DF57ED8C7EFC799D1BD99 /* Pods_LeilaoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeilaoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F712E29B1BE9A2A8745A94E1 /* Pods-LeilaoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeilaoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeilaoTests/Pods-LeilaoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAE20C6E2639B7A1008B4773 /* Pagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagamento.swift; sourceTree = "<group>"; };
+		EAE20C732639B853008B4773 /* RepositorioDePagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioDePagamento.swift; sourceTree = "<group>"; };
+		EAE20C782639B8E4008B4773 /* GeradorDePagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeradorDePagamento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038136C520B4896B005FEDD7 /* libsqlite3.tbd in Frameworks */,
-				AED4584FF50B22A6EA843F1B /* Pods_Leilao.framework in Frameworks */,
+				DF58C137751C6C970EBDC0AE /* Pods_Leilao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87030A9AE0C6ED1866EAE846 /* Pods_LeilaoTests.framework in Frameworks */,
+				0368E4EA0C70B086FD18F753 /* Pods_LeilaoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3962CB2194A1E4C00DA717F4 /* Pods_LeilaoUITests.framework in Frameworks */,
+				6438F0018C037725BE07C4EF /* Pods_LeilaoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +149,8 @@
 				03FA4B07209353290047D61B /* LeilaoTests */,
 				03FA4B12209353290047D61B /* LeilaoUITests */,
 				03FA4AEE209353270047D61B /* Products */,
-				419135D34EBF684FAAE8A3C7 /* Pods */,
 				CCBF89A0B834C6B7C379A4EA /* Frameworks */,
+				F3C7F5CD46FBBA24AE877CE9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,8 +189,9 @@
 				03FA4B08209353290047D61B /* LeilaoTests.swift */,
 				A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */,
 				EA33C07B2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift */,
+				EABEBF1A263A00900096E264 /* GeradorDePagamentoTests.swift */,
+				EA308B1F263A64BF009F9221 /* GeneratedMocks.swift */,
 				03FA4B0A209353290047D61B /* Info.plist */,
-				EA33C0AD2638A33E00EA47F7 /* GeneratedMocks.swift */,
 			);
 			path = LeilaoTests;
 			sourceTree = "<group>";
@@ -206,6 +215,9 @@
 				A26FBA9320A32DE60090FC1F /* CriadorDeLeilao.swift */,
 				038136CA20B48B5F005FEDD7 /* EncerradorDeLeilao.swift */,
 				EAE20C66263998DF008B4773 /* Carteiro.swift */,
+				EAE20C6E2639B7A1008B4773 /* Pagamento.swift */,
+				EAE20C732639B853008B4773 /* RepositorioDePagamento.swift */,
+				EAE20C782639B8E4008B4773 /* GeradorDePagamento.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,28 +230,28 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		419135D34EBF684FAAE8A3C7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7A02B7555041DD36E6C17E51 /* Pods-Leilao.debug.xcconfig */,
-				96B13E362E12E632B3A49E78 /* Pods-Leilao.release.xcconfig */,
-				032438B2846DA6607A6F44D3 /* Pods-LeilaoTests.debug.xcconfig */,
-				F712E29B1BE9A2A8745A94E1 /* Pods-LeilaoTests.release.xcconfig */,
-				C7DC0AC1610E99EB10575FA4 /* Pods-LeilaoUITests.debug.xcconfig */,
-				0CF7CCCF5DC3FEF7719DA049 /* Pods-LeilaoUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CCBF89A0B834C6B7C379A4EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				038136C420B4896B005FEDD7 /* libsqlite3.tbd */,
-				B81EC4192FC18459C2154C4D /* Pods_Leilao.framework */,
-				F38DF57ED8C7EFC799D1BD99 /* Pods_LeilaoTests.framework */,
-				F145FB2F65C8FA496BC97986 /* Pods_LeilaoUITests.framework */,
+				9D5C25145AB7482C6C8F26F9 /* Pods_Leilao.framework */,
+				2AAB7E06ECCE04AE745DD16E /* Pods_LeilaoTests.framework */,
+				C1F661D44DAB27F61591D6AD /* Pods_LeilaoUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C7F5CD46FBBA24AE877CE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE0BEC0E04FA79784C7F751E /* Pods-Leilao.debug.xcconfig */,
+				9DE74C69E13AFB7D10DA5F9F /* Pods-Leilao.release.xcconfig */,
+				C144C4465E71DC8F6E420EB3 /* Pods-LeilaoTests.debug.xcconfig */,
+				3B279B469383BE434E51B508 /* Pods-LeilaoTests.release.xcconfig */,
+				B6FE7BF65B3A6B823CE1A168 /* Pods-LeilaoUITests.debug.xcconfig */,
+				8AC4F37AA0A0DF583DFB1193 /* Pods-LeilaoUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FA4B18209353290047D61B /* Build configuration list for PBXNativeTarget "Leilao" */;
 			buildPhases = (
-				CA991E11FC04CD5EB9E604A8 /* [CP] Check Pods Manifest.lock */,
+				0A702585D41D2A16D804DC4A /* [CP] Check Pods Manifest.lock */,
 				03FA4AE9209353270047D61B /* Sources */,
 				03FA4AEA209353270047D61B /* Frameworks */,
 				03FA4AEB209353270047D61B /* Resources */,
@@ -268,11 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FA4B1B209353290047D61B /* Build configuration list for PBXNativeTarget "LeilaoTests" */;
 			buildPhases = (
-				1DCDC3EAA1992CDE34243B54 /* [CP] Check Pods Manifest.lock */,
+				08FF667B191BFEAC6E615323 /* [CP] Check Pods Manifest.lock */,
 				03FA4B00209353290047D61B /* Sources */,
 				03FA4B01209353290047D61B /* Frameworks */,
 				03FA4B02209353290047D61B /* Resources */,
-				D4C28D1E9C3A85959B743750 /* [CP] Embed Pods Frameworks */,
+				C4FF788B0471F517B15D8EF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,7 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FA4B1E209353290047D61B /* Build configuration list for PBXNativeTarget "LeilaoUITests" */;
 			buildPhases = (
-				663BA69E823368276B40BA94 /* [CP] Check Pods Manifest.lock */,
+				0589005098CD2311C8A76D55 /* [CP] Check Pods Manifest.lock */,
 				03FA4B0B209353290047D61B /* Sources */,
 				03FA4B0C209353290047D61B /* Frameworks */,
 				03FA4B0D209353290047D61B /* Resources */,
@@ -374,34 +386,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DCDC3EAA1992CDE34243B54 /* [CP] Check Pods Manifest.lock */ = {
+		0589005098CD2311C8A76D55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LeilaoTests-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		663BA69E823368276B40BA94 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LeilaoUITests-checkManifestLockResult.txt",
 			);
@@ -410,16 +408,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CA991E11FC04CD5EB9E604A8 /* [CP] Check Pods Manifest.lock */ = {
+		08FF667B191BFEAC6E615323 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeilaoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A702585D41D2A16D804DC4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Leilao-checkManifestLockResult.txt",
 			);
@@ -428,7 +452,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4C28D1E9C3A85959B743750 /* [CP] Embed Pods Frameworks */ = {
+		C4FF788B0471F517B15D8EF3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,7 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Dao/LeilaoDao.swift\" \\\n\"${INPUT_DIR}/Models/Carteiro.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Dao/LeilaoDao.swift\" \\\n\"${INPUT_DIR}/Models/Carteiro.swift\" \\\n\"${INPUT_DIR}/Models/RepositorioDePagamento.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -474,9 +498,12 @@
 				03FA4B25209353AF0047D61B /* Lance.swift in Sources */,
 				038136CB20B48B5F005FEDD7 /* EncerradorDeLeilao.swift in Sources */,
 				03FA4AF1209353270047D61B /* AppDelegate.swift in Sources */,
+				EAE20C742639B853008B4773 /* RepositorioDePagamento.swift in Sources */,
 				A26FBA9420A32DE60090FC1F /* CriadorDeLeilao.swift in Sources */,
+				EAE20C6F2639B7A1008B4773 /* Pagamento.swift in Sources */,
 				EAE20C67263998DF008B4773 /* Carteiro.swift in Sources */,
 				03FA4B27209353CB0047D61B /* Usuario.swift in Sources */,
+				EAE20C792639B8E4008B4773 /* GeradorDePagamento.swift in Sources */,
 				03FA4AF9209353270047D61B /* Leilao.xcdatamodeld in Sources */,
 				A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */,
 				038136C720B48AD8005FEDD7 /* FormatadorData.swift in Sources */,
@@ -488,10 +515,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABEBF1B263A00900096E264 /* GeradorDePagamentoTests.swift in Sources */,
 				EA33C07C2638645E00EA47F7 /* EncerradorDeLeilaoTests.swift in Sources */,
 				03FA4B09209353290047D61B /* LeilaoTests.swift in Sources */,
 				A23F5A11209CD8FA000E6525 /* AvaliadorTests.swift in Sources */,
-				EA33C0AE2638A33E00EA47F7 /* GeneratedMocks.swift in Sources */,
+				EA308B20263A64BF009F9221 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,7 +682,7 @@
 		};
 		03FA4B19209353290047D61B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A02B7555041DD36E6C17E51 /* Pods-Leilao.debug.xcconfig */;
+			baseConfigurationReference = DE0BEC0E04FA79784C7F751E /* Pods-Leilao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,7 +702,7 @@
 		};
 		03FA4B1A209353290047D61B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96B13E362E12E632B3A49E78 /* Pods-Leilao.release.xcconfig */;
+			baseConfigurationReference = 9DE74C69E13AFB7D10DA5F9F /* Pods-Leilao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -694,7 +722,7 @@
 		};
 		03FA4B1C209353290047D61B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 032438B2846DA6607A6F44D3 /* Pods-LeilaoTests.debug.xcconfig */;
+			baseConfigurationReference = C144C4465E71DC8F6E420EB3 /* Pods-LeilaoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -716,7 +744,7 @@
 		};
 		03FA4B1D209353290047D61B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F712E29B1BE9A2A8745A94E1 /* Pods-LeilaoTests.release.xcconfig */;
+			baseConfigurationReference = 3B279B469383BE434E51B508 /* Pods-LeilaoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -738,7 +766,7 @@
 		};
 		03FA4B1F209353290047D61B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7DC0AC1610E99EB10575FA4 /* Pods-LeilaoUITests.debug.xcconfig */;
+			baseConfigurationReference = B6FE7BF65B3A6B823CE1A168 /* Pods-LeilaoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -759,7 +787,7 @@
 		};
 		03FA4B20209353290047D61B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CF7CCCF5DC3FEF7719DA049 /* Pods-LeilaoUITests.release.xcconfig */;
+			baseConfigurationReference = 8AC4F37AA0A0DF583DFB1193 /* Pods-LeilaoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Leilao/Dao/LeilaoDao.swift at 2021-04-28 15:00:58 +0000
+// MARK: - Mocks generated from file: Leilao/Dao/LeilaoDao.swift at 2021-04-29 04:53:04 +0000
 
 //
 //  LeilaoDao.swift
@@ -223,7 +223,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: Leilao/Models/Carteiro.swift at 2021-04-28 15:00:58 +0000
+// MARK: - Mocks generated from file: Leilao/Models/Carteiro.swift at 2021-04-29 04:53:04 +0000
 
 //
 //  Carteiro.swift
@@ -323,6 +323,112 @@ import Foundation
 
     
      override func envia(_ leilao: Leilao)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+}
+
+
+// MARK: - Mocks generated from file: Leilao/Models/RepositorioDePagamento.swift at 2021-04-29 04:53:04 +0000
+
+//
+//  RepositorioDePagamento.swift
+//  Leilao
+//
+//  Created by Jaqueline Bittencourt Santos on 28/04/21.
+//  Copyright © 2021 Alura. All rights reserved.
+//
+
+import Cuckoo
+@testable import Leilao
+
+import Foundation
+
+
+ class MockRepositorioDePagamento: RepositorioDePagamento, Cuckoo.ClassMock {
+    
+     typealias MocksType = RepositorioDePagamento
+    
+     typealias Stubbing = __StubbingProxy_RepositorioDePagamento
+     typealias Verification = __VerificationProxy_RepositorioDePagamento
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: true)
+
+    
+    private var __defaultImplStub: RepositorioDePagamento?
+
+     func enableDefaultImplementation(_ stub: RepositorioDePagamento) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+
+    
+
+    
+    
+    
+     override func salva(_ pagamento: Pagamento)  {
+        
+    return cuckoo_manager.call("salva(_: Pagamento)",
+            parameters: (pagamento),
+            escapingParameters: (pagamento),
+            superclassCall:
+                
+                super.salva(pagamento)
+                ,
+            defaultCall: __defaultImplStub!.salva(pagamento))
+        
+    }
+    
+
+	 struct __StubbingProxy_RepositorioDePagamento: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func salva<M1: Cuckoo.Matchable>(_ pagamento: M1) -> Cuckoo.ClassStubNoReturnFunction<(Pagamento)> where M1.MatchedType == Pagamento {
+	        let matchers: [Cuckoo.ParameterMatcher<(Pagamento)>] = [wrap(matchable: pagamento) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockRepositorioDePagamento.self, method: "salva(_: Pagamento)", parameterMatchers: matchers))
+	    }
+	    
+	}
+
+	 struct __VerificationProxy_RepositorioDePagamento: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func salva<M1: Cuckoo.Matchable>(_ pagamento: M1) -> Cuckoo.__DoNotUse<(Pagamento), Void> where M1.MatchedType == Pagamento {
+	        let matchers: [Cuckoo.ParameterMatcher<(Pagamento)>] = [wrap(matchable: pagamento) { $0 }]
+	        return cuckoo_manager.verify("salva(_: Pagamento)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
+}
+
+ class RepositorioDePagamentoStub: RepositorioDePagamento {
+    
+
+    
+
+    
+     override func salva(_ pagamento: Pagamento)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     

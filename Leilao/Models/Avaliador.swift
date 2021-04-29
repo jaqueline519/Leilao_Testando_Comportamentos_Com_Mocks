@@ -14,7 +14,7 @@ enum ErroAvaliador:Error {
 
 class Avaliador {
     
-    private var maiorDeTodos = Double.leastNonzeroMagnitude
+    private var maiorDeTodos = Double.leastNormalMagnitude
     private var menorDeTodos = Double.greatestFiniteMagnitude
     private var maiores:[Lance] = []
     
